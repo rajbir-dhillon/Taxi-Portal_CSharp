@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{21BDA1F7-360B-4721-A787-72025B7057B7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>component</RootNamespace>
+    <AssemblyName>component</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addDriver.Designer.cs">
+      <DependentUpon>addDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addTraining.Designer.cs">
+      <DependentUpon>addTraining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookSession.Designer.cs">
+      <DependentUpon>bookSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="reportPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reportPage.Designer.cs">
+      <DependentUpon>reportPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="telephoneBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="telephoneBox.Designer.cs">
+      <DependentUpon>telephoneBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updateSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updateSession.Designer.cs">
+      <DependentUpon>updateSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view.Designer.cs">
+      <DependentUpon>view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="viewSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewSession.Designer.cs">
+      <DependentUpon>viewSession.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addDriver.resx">
+      <DependentUpon>addDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addTraining.resx">
+      <DependentUpon>addTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookSession.resx">
+      <DependentUpon>bookSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="reportPage.resx">
+      <DependentUpon>reportPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updateSession.resx">
+      <DependentUpon>updateSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view.resx">
+      <DependentUpon>view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewSession.resx">
+      <DependentUpon>viewSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="DatabaseDataSet1.xsc">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DatabaseDataSet1.xss">
+      <DependentUpon>DatabaseDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database.accdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\magnifying-glass.png" />
+    <None Include="Resources\magnifying-glass1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
